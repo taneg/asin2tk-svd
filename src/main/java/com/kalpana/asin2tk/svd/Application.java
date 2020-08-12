@@ -4,9 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * TODO
  *
- * @author JINVOVO
+ * @author 2tk
  * @version 1.0
  * @date 2020/8/10 13:58
  **/

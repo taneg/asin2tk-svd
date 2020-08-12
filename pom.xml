@@ -11,7 +11,7 @@
     <groupId>com.kalpana</groupId>
     <artifactId>asin2tk-svd</artifactId>
     <version>1.0.0</version>
-    <name>asin2tk-svd</name>
+    <name>svd</name>
     <description>Simple project for Spring Boot</description>
 
     <properties>
@@ -60,7 +60,6 @@
     </dependencies>
 
     <build>
-        <finalName>svd</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
