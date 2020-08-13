@@ -36,18 +36,4 @@ public class UrlUtil {
         return null;
     }
 
-    public static String filterUrl2(String url) {
-        String regex = "https?://(\\w|-)+(\\.(\\w|-)+)+(/(\\w+(\\?(\\w+=(\\w|%|-)*(\\&\\w+=(\\w|%|-)*)*)?)?)?)+";//匹配网址
-        Pattern p = Pattern.compile(regex);
-        Matcher m = p.matcher(url);
-        if(m.find()){
-            return   url.substring(m.start(),m.end());
-        }
-        return "";
-    }
-
-    public static void main(String[] args) {
-        String s = filterUrl("高考加油\uD83D\uDCAA%20祝你们都能考一个理想的大学！%20你们是最棒的❤%EF%B8%8F#高考加油%20#快手管理员%20https://v.kuaishou.com/5y1T1s%20复制此链接，打开【快手App】直接观看！");
-        System.out.println(s);
-    }
 }
