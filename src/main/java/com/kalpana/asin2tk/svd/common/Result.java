@@ -1,5 +1,7 @@
 package com.kalpana.asin2tk.svd.common;
 
+import com.kalpana.asin2tk.svd.enums.ErrorCodeEnums;
+
 public class Result<T> {
 
     public final static Integer CODE_SUCCESS = 0;
@@ -31,6 +33,10 @@ public class Result<T> {
 
     public Result() {
 
+    }
+
+    public static <T> Result<T> build(ErrorCodeEnums errorCodeEnums) {
+        return new Result<T>(errorCodeEnums.getCode(), errorCodeEnums.getMsg(), null);
     }
 
     public static <T> Result<T> build(Integer status, String msg) {

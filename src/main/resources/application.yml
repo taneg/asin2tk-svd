@@ -1,2 +1,18 @@
 server:
   port: 8089
+spring:
+  mvc:
+    throw-exception-if-no-handler-found: true
+  resources:
+    add-mappings: false
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+  application:
+    name: svd
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8081/eureka/
+  instance:
+      lease-renewal-interval-in-seconds: 1
+      lease-expiration-duration-in-seconds: 2
